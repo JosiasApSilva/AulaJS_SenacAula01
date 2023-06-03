@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button onclick="Laco()"> Função01 </button>
+    <button onclick="LacoWhile()">Laço com Estrutura <strong>While</strong></button>
+    <button onclick="LacoDoWhile()">Laço com Estrutura <strong>DoWhile</strong></button>
+    <button onclick="LacoFor()">Laço com Estrutura <strong>For</strong></button>
+
+
+    <button onclick="Tabuadap()">Gerar Tabuada</button>
+
+        <input type="number" id="num" />
+        <button onclick="tabuada()">Gerar Tabuada</button>
+        <div id="resultado"></div>
+
+</body>    
+    <script>
+
+        // contador = contador + 1
+        // contador +=1
+        // contador++
+        function Tabuadap(){
+            var nump = prompt('Digite o numero da tabuada: ')
+
+            for (cont = 0; cont <= 10; cont++) {
+                console.log(nump + ' x ' + cont + ' = ' + cont * nump)
+            }
+        }
+
+
+
+        function Laco(){
+            alert('minha primeira função 01')
+        }
+
+        function LacoWhile(){
+            var contador = 0
+            while (contador < 5){
+                console.log('Boa Tarde')
+                console.log('contador: ' + contador)
+                contador = contador + 1
+            }   
+        }
+
+        function LacoDoWhile(){
+            contador = 0
+            do {
+                console.log('Boa Noite')
+                console.log('contador: ' + contador)
+                contador +=1
+
+            } while (contador < 5)
+        }
+
+        function LacoFor(){
+            for(contador = 0; contador <5; contador++){
+                console.log('Bom Dia');
+            }
+        }
+
+        // minha tabuada
+            function tabuada() {
+            var num = document.getElementById("num").value;
+                var i = 0;
+                var tabuada = "";
+                for (i = 0; i <= 10; i++) {
+                    tabuada += num + " x " + i + " = " + num * i + "<br>";
+                    }
+                        document.getElementById("resultado").innerHTML = tabuada;
+            
+            } 
+
+      
+
+
+
+
+
+
+
+
+
+        
+    </script>
+    
+
+</html>
