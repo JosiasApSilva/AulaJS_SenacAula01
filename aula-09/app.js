@@ -57,7 +57,7 @@
 
 
 //7
-const buttonElement = document.getElementById('btnClick');
-buttonElement.addEventListener('click', function() {
-    alert('Você clicou no botão!');
-});
+// const buttonElement = document.getElementById('btnClick');
+// buttonElement.addEventListener('click', function() {
+//     alert('Você clicou no botão!');
+// });
